@@ -14,123 +14,122 @@ precio numeric(6),
 primary key(idJuego)
 );
 
-CREATE
-  TABLE Cliente
+create table cliente
   (
-    IdCliente NUMERIC (3) NOT NULL ,
-    Nombre    VARCHAR (20) ,
-    Apellido  VARCHAR (20) ,
-    Edad      NUMERIC (2) ,
-    IdVentas  NUMERIC (10)
+    IdCliente numeric (3) not null ,
+    nombre    varchar (20) ,
+    apellido  varchar (20) ,
+    edad      numeric (2) ,
+    idVentas  numeric (10)
   ) ;
 
 
-CREATE TABLE Compañia
+create table compania
   (
-    IdCompañia NUMERIC (3) NOT NULL ,
-    Nombre     VARCHAR (20) ,
-    Pais       NUMERIC (3) ,
-    IdPais     NUMERIC (3)
+    idCompañia numeric (3) not null ,
+    nombre     varchar (20) ,
+    pais       numeric (3) ,
+    idPais     numeric (3)
   ) ;
 
 
-CREATE TABLE Empleados
+create table empleados
   (
-    IdEmpleado NUMERIC (3) NOT NULL ,
-    rut        VARCHAR (15) ,
-    Nombre     VARCHAR (20) ,
-    apellido   VARCHAR (20) ,
-    telefono   VARCHAR (15) ,
-    IdSucursal NUMERIC (3)
+    idEmpleado numeric (3) not null ,
+    rut        varchar (15) ,
+    nombre     varchar (20) ,
+    apellido   varchar (20) ,
+    telefono   varchar (15) ,
+    idSucursal numeric (3)
   ) ;
 
 
-CREATE TABLE Genero
+create table genero
   (
-    IdGenero NUMERIC (3) NOT NULL ,
-    Nombre   VARCHAR (20)
+    idGenero numeric (3) not null ,
+    nombre   varchar (20)
   ) ;
 
 
-CREATE  TABLE Pais
+create table pais
   (
-    IdPais NUMERIC (3) NOT NULL ,
-    Nombre VARCHAR (20)
+    idPais numeric (3) not null ,
+    nombre varchar (20)
   ) ;
 
 
-CREATE TABLE Plataforma
+create table plataforma
   (
-    IdPlataforma NUMERIC (3) NOT NULL ,
-    Nombre       VARCHAR (20) ,
-    Lanzamiento  NUMBERIC (4)
+    idPlataforma numeric (3) not null ,
+    nombre       varchar (20) ,
+    lanzamiento  numeric (4)
   ) ;
 
 
-CREATE  TABLE Ventas
+create table ventas
   (
-    IdVentas    NUMERIC (10) NOT NULL ,
-    Cliente     NUMERIC (3) ,
-    sucursal    NUMERIC (3) ,
-    juego       NUMERIC (3) ,
-    IdSucursal  NUMERIC (3) ,
-    TotalCompra NUMERIC (6)
+    idVentas    numeric (10) not null ,
+    cliente     numeric (3) ,
+    sucursal    numeric (3) ,
+    juego       numeric (3) ,
+    idSucursal  numeric (3) ,
+    totalCompra numeric (6)
   ) ;
 
 
-CREATE TABLE sucursal
+create table sucursal
   (
-    IdSucursal NUMERIC (3) NOT NULL ,
-    direccion  VARCHAR (30) ,
-    Telefono   VARCHAR (15) ,
-    Email      VARCHAR (25)
+    idSucursal numeric (3) not null ,
+    direccion  varchar (30) ,
+    telefono   varchar (15) ,
+    email      varchar (25)
   ) ;
 
 
-ALTER TABLE Cliente ADD CONSTRAINT Cliente_PK PRIMARY KEY
+alter table cliente add constarint cliente_pk primary key
 (
-  IdCliente
+  idCliente
 )
 ;
 
-ALTER TABLE Compañia ADD CONSTRAINT Compañia_PK PRIMARY KEY
+alter table compania add constarint cliente_pk primary key
 (
-  IdCompañia
+  idCompañia
 )
 ;
 
-ALTER TABLE Genero ADD CONSTRAINT Genero_PK PRIMARY KEY
+alter table genero add constarint cliente_pk primary key
 (
-  IdGenero
+  idGenero
 )
 ;
 
-ALTER TABLE Juegos ADD CONSTRAINT Juegos_PK PRIMARY KEY
+alter table juegos add constarint cliente_pk primary key
 (
-  IdJuego
+  idJuego
 )
 ;
 
-ALTER TABLE Pais ADD CONSTRAINT Pais_PK PRIMARY KEY
+alter table pais add constarint cliente_pk primary key
 (
-  IdPais
+  idPais
 )
 ;
 
-ALTER TABLE Plataforma ADD CONSTRAINT Plataforma_PK PRIMARY KEY
+alter table plataforma add constarint cliente_pk primary key
 (
-  IdPlataforma
+  idPlataforma
 )
 ;
 
-ALTER TABLE Ventas ADD CONSTRAINT Ventas_PK PRIMARY KEY
+alter table ventas add constarint cliente_pk primary key
 (
-  IdVentas
+  idVentas
 )
 ;
 
-ALTER TABLE sucursal ADD CONSTRAINT sucursal_PK PRIMARY KEY
+alter table sucursal add constarint cliente_pk primary key
 (
-  IdSucursal
+  idSucursal
 )
 ;
