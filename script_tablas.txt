@@ -13,3 +13,124 @@ stock numeric(4),
 precio numeric(6),
 primary key(idJuego)
 );
+
+CREATE
+  TABLE Cliente
+  (
+    IdCliente NUMERIC (3) NOT NULL ,
+    Nombre    VARCHAR (20) ,
+    Apellido  VARCHAR (20) ,
+    Edad      NUMERIC (2) ,
+    IdVentas  NUMERIC (10)
+  ) ;
+
+
+CREATE TABLE Compañia
+  (
+    IdCompañia NUMERIC (3) NOT NULL ,
+    Nombre     VARCHAR (20) ,
+    Pais       NUMERIC (3) ,
+    IdPais     NUMERIC (3)
+  ) ;
+
+
+CREATE TABLE Empleados
+  (
+    IdEmpleado NUMERIC (3) NOT NULL ,
+    rut        VARCHAR (15) ,
+    Nombre     VARCHAR (20) ,
+    apellido   VARCHAR (20) ,
+    telefono   VARCHAR (15) ,
+    IdSucursal NUMERIC (3)
+  ) ;
+
+
+CREATE TABLE Genero
+  (
+    IdGenero NUMERIC (3) NOT NULL ,
+    Nombre   VARCHAR (20)
+  ) ;
+
+
+CREATE  TABLE Pais
+  (
+    IdPais NUMERIC (3) NOT NULL ,
+    Nombre VARCHAR (20)
+  ) ;
+
+
+CREATE TABLE Plataforma
+  (
+    IdPlataforma NUMERIC (3) NOT NULL ,
+    Nombre       VARCHAR (20) ,
+    Lanzamiento  NUMBERIC (4)
+  ) ;
+
+
+CREATE  TABLE Ventas
+  (
+    IdVentas    NUMERIC (10) NOT NULL ,
+    Cliente     NUMERIC (3) ,
+    sucursal    NUMERIC (3) ,
+    juego       NUMERIC (3) ,
+    IdSucursal  NUMERIC (3) ,
+    TotalCompra NUMERIC (6)
+  ) ;
+
+
+CREATE TABLE sucursal
+  (
+    IdSucursal NUMERIC (3) NOT NULL ,
+    direccion  VARCHAR (30) ,
+    Telefono   VARCHAR (15) ,
+    Email      VARCHAR (25)
+  ) ;
+
+
+ALTER TABLE Cliente ADD CONSTRAINT Cliente_PK PRIMARY KEY
+(
+  IdCliente
+)
+;
+
+ALTER TABLE Compañia ADD CONSTRAINT Compañia_PK PRIMARY KEY
+(
+  IdCompañia
+)
+;
+
+ALTER TABLE Genero ADD CONSTRAINT Genero_PK PRIMARY KEY
+(
+  IdGenero
+)
+;
+
+ALTER TABLE Juegos ADD CONSTRAINT Juegos_PK PRIMARY KEY
+(
+  IdJuego
+)
+;
+
+ALTER TABLE Pais ADD CONSTRAINT Pais_PK PRIMARY KEY
+(
+  IdPais
+)
+;
+
+ALTER TABLE Plataforma ADD CONSTRAINT Plataforma_PK PRIMARY KEY
+(
+  IdPlataforma
+)
+;
+
+ALTER TABLE Ventas ADD CONSTRAINT Ventas_PK PRIMARY KEY
+(
+  IdVentas
+)
+;
+
+ALTER TABLE sucursal ADD CONSTRAINT sucursal_PK PRIMARY KEY
+(
+  IdSucursal
+)
+;
