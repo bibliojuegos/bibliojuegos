@@ -26,7 +26,7 @@ create table cliente
 
 create table compania
   (
-    idCompañia numeric (3) not null ,
+    idCompania numeric (3) not null ,
     nombre     varchar (20) ,
     pais       numeric (3) ,
     idPais     numeric (3)
@@ -94,7 +94,7 @@ alter table cliente add constarint cliente_pk primary key
 
 alter table compania add constarint cliente_pk primary key
 (
-  idCompañia
+  idCompania
 )
 ;
 
