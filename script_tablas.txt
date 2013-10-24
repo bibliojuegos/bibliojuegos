@@ -1,3 +1,4 @@
+//recuerda no colocar 'Ñ' en los nombres de los atributos ni tampoco que empiecen con mayusucula
 //Juegos
 create table juegos(
 idJuego numeric(3),
