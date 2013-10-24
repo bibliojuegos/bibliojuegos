@@ -16,7 +16,7 @@ primary key(idJuego)
 
 create table cliente
   (
-    IdCliente numeric (3) not null ,
+    idCliente numeric (3) not null ,
     nombre    varchar (20) ,
     apellido  varchar (20) ,
     edad      numeric (2) ,
