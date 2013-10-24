@@ -1,0 +1,5 @@
+G:\Projectnet\Libreria\Libreria\obj\Debug\ResolveAssemblyReference.cache
+G:\Projectnet\Libreria\Libreria\bin\Debug\Libreria.dll
+G:\Projectnet\Libreria\Libreria\bin\Debug\Libreria.pdb
+G:\Projectnet\Libreria\Libreria\obj\Debug\Libreria.dll
+G:\Projectnet\Libreria\Libreria\obj\Debug\Libreria.pdb
