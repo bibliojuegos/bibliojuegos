@@ -3,3 +3,8 @@ G:\Projectnet\Libreria\Libreria\bin\Debug\Libreria.dll
 G:\Projectnet\Libreria\Libreria\bin\Debug\Libreria.pdb
 G:\Projectnet\Libreria\Libreria\obj\Debug\Libreria.dll
 G:\Projectnet\Libreria\Libreria\obj\Debug\Libreria.pdb
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Debug\ResolveAssemblyReference.cache
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Debug\Libreria.dll
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\bin\Debug\Libreria.dll
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\bin\Debug\Libreria.pdb
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Debug\Libreria.pdb

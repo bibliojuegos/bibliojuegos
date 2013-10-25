@@ -3,13 +3,23 @@ G:\Projectnet\Libreria\Libreria\bin\Release\Libreria.pdb
 G:\Projectnet\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
 G:\Projectnet\Libreria\Libreria\obj\Release\Libreria.dll
 G:\Projectnet\Libreria\Libreria\obj\Release\Libreria.pdb
-F:\Projectnet\Libreria\Libreria\bin\Release\Libreria.dll
-F:\Projectnet\Libreria\Libreria\bin\Release\Libreria.pdb
-F:\Projectnet\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
-F:\Projectnet\Libreria\Libreria\obj\Release\Libreria.dll
-F:\Projectnet\Libreria\Libreria\obj\Release\Libreria.pdb
-C:\Users\Duoc\Desktop\Projectnet\Libreria\Libreria\bin\Release\Libreria.dll
-C:\Users\Duoc\Desktop\Projectnet\Libreria\Libreria\bin\Release\Libreria.pdb
-C:\Users\Duoc\Desktop\Projectnet\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
-C:\Users\Duoc\Desktop\Projectnet\Libreria\Libreria\obj\Release\Libreria.dll
-C:\Users\Duoc\Desktop\Projectnet\Libreria\Libreria\obj\Release\Libreria.pdb
+C:\Users\Jazmine\Downloads\Projecto de Net\ProjectnetInsert\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jazmine\Downloads\Projecto de Net\ProjectnetInsert\Libreria\Libreria\obj\Release\Libreria.dll
+C:\Users\Jazmine\Downloads\Projecto de Net\ProjectnetInsert\Libreria\Libreria\obj\Release\Libreria.pdb
+C:\Users\Jazmine\Downloads\Projecto de Net\ProjectnetInsert\Libreria\Libreria\bin\Release\Libreria.dll
+C:\Users\Jazmine\Downloads\Projecto de Net\ProjectnetInsert\Libreria\Libreria\bin\Release\Libreria.pdb
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\bin\Release\Libreria.dll
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\bin\Release\Libreria.pdb
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Release\Libreria.dll
+F:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Release\Libreria.pdb
+G:\Projectnet\ProjectnetInsert\Libreria\Libreria\bin\Release\Libreria.dll
+G:\Projectnet\ProjectnetInsert\Libreria\Libreria\bin\Release\Libreria.pdb
+G:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
+G:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Release\Libreria.dll
+G:\Projectnet\ProjectnetInsert\Libreria\Libreria\obj\Release\Libreria.pdb
+C:\Users\fox\git\Libreria\Libreria\bin\Release\Libreria.dll
+C:\Users\fox\git\Libreria\Libreria\bin\Release\Libreria.pdb
+C:\Users\fox\git\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
+C:\Users\fox\git\Libreria\Libreria\obj\Release\Libreria.dll
+C:\Users\fox\git\Libreria\Libreria\obj\Release\Libreria.pdb

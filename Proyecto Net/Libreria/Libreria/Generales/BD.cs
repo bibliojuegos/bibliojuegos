@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Data;
-using LibTelefonica.Generales;
 
 namespace Libreria.Generales
 {
@@ -16,11 +15,11 @@ namespace Libreria.Generales
         private static BD bd= null;
         private BD()
         {
-            Log.rutea("Constructor 1" );
+            //Log.rutea("Constructor 1" );
             cnn = new SqlConnection(stConec);
-            Log.rutea("New1" );
+            //Log.rutea("New1" );
             open();
-            Log.rutea("Open");
+            //Log.rutea("Open");
         }
         private void open()
         {
