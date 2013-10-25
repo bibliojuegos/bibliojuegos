@@ -29,7 +29,6 @@ create table compania
   (
     idCompania numeric (3) not null ,
     nombre     varchar (20) ,
-    pais       numeric (3) ,
     idPais     numeric (3)
   ) ;
 
