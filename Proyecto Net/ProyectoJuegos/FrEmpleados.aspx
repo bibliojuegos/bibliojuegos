@@ -1,5 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="FrEmpleados.aspx.cs" Inherits="FrEmpleados" Title="Página sin título" %>
-
+<%@ Page EnableEventValidation="false" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="FrEmpleados.aspx.cs" Inherits="FrEmpleados" Title="Página sin título" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
         .style1
@@ -153,7 +152,7 @@
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="cpCuerpo"" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="cpCuerpo" Runat="Server">
     <table id="BtSalir" class="style1">
         <tr>
             <td class="style2">
@@ -253,13 +252,62 @@
             </td>
             <td class="style32">
                 <asp:Button ID="BtActualizar" runat="server" onclick="BtActualizar_Click" 
-                    Text="Actualizar" />
+                    Text="Agregar" />
             </td>
             <td class="style4">
                 <asp:Button ID="Button1" runat="server" Text="Salir" />
             </td>
             <td class="style4">
             </td>
+        </tr>
+        <tr>
+        <td>
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
+                AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="idEmpleado" 
+                DataSourceID="SqlDataSource1">
+                <Columns>
+                    <asp:BoundField DataField="idEmpleado" HeaderText="idEmpleado" ReadOnly="True" 
+                        SortExpression="idEmpleado" />
+                    <asp:BoundField DataField="rut" HeaderText="rut" SortExpression="rut" />
+                    <asp:BoundField DataField="nombre" HeaderText="nombre" 
+                        SortExpression="nombre" />
+                    <asp:BoundField DataField="apellido" HeaderText="apellido" 
+                        SortExpression="apellido" />
+                    <asp:BoundField DataField="telefono" HeaderText="telefono" 
+                        SortExpression="telefono" />
+                    <asp:BoundField DataField="idSucursal" HeaderText="idSucursal" 
+                        SortExpression="idSucursal" />
+                    <asp:CommandField ButtonType="Button" ShowEditButton="True" />
+                    <asp:CommandField ButtonType="Button" ShowDeleteButton="True" />
+                </Columns>
+            </asp:GridView>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                ConnectionString="<%$ ConnectionStrings:masterConnectionString %>" 
+                DeleteCommand="DELETE FROM [empleados] WHERE [idEmpleado] = @idEmpleado" 
+                InsertCommand="INSERT INTO [empleados] ([idEmpleado], [rut], [nombre], [apellido], [telefono], [idSucursal]) VALUES (@idEmpleado, @rut, @nombre, @apellido, @telefono, @idSucursal)" 
+                SelectCommand="SELECT [idEmpleado], [rut], [nombre], [apellido], [telefono], [idSucursal] FROM [empleados]" 
+                UpdateCommand="UPDATE [empleados] SET [rut] = @rut, [nombre] = @nombre, [apellido] = @apellido, [telefono] = @telefono, [idSucursal] = @idSucursal WHERE [idEmpleado] = @idEmpleado">
+                <DeleteParameters>
+                    <asp:Parameter Name="idEmpleado" Type="Decimal" />
+                </DeleteParameters>
+                <UpdateParameters>
+                    <asp:Parameter Name="rut" Type="String" />
+                    <asp:Parameter Name="nombre" Type="String" />
+                    <asp:Parameter Name="apellido" Type="String" />
+                    <asp:Parameter Name="telefono" Type="String" />
+                    <asp:Parameter Name="idSucursal" Type="Decimal" />
+                    <asp:Parameter Name="idEmpleado" Type="Decimal" />
+                </UpdateParameters>
+                <InsertParameters>
+                    <asp:Parameter Name="idEmpleado" Type="Decimal" />
+                    <asp:Parameter Name="rut" Type="String" />
+                    <asp:Parameter Name="nombre" Type="String" />
+                    <asp:Parameter Name="apellido" Type="String" />
+                    <asp:Parameter Name="telefono" Type="String" />
+                    <asp:Parameter Name="idSucursal" Type="Decimal" />
+                </InsertParameters>
+            </asp:SqlDataSource>
+        </td>
         </tr>
     </table>
 </asp:Content>

@@ -14,7 +14,7 @@ namespace Libreria.DAO
          {
              try
              {
-                 String sql = String.Format("Insert into empleado (idempleado, rut, nombre, apellido, telefono) values ('" +empleados.IdEmpleado+ "','"+empleados.Rut+"','" +empleados.Nombre+ "','" +empleados.Apellido+ "','" +empleados.Telefono+ "')");
+                 String sql = String.Format("insert into empleados (idEmpleado, rut, nombre, apellido, telefono, idSucursal) values ('" +empleados.IdEmpleado+ "','"+empleados.Rut+"','" +empleados.Nombre+ "','" +empleados.Apellido+ "','" +empleados.Telefono+ "','"+empleados.IdSucursal+"')");
                  if (!BD.getInstance().sqlCommand(sql))
                  {
                      return false;
@@ -36,7 +36,7 @@ namespace Libreria.DAO
          {
              try
              {
-                 String sql = String.Format("Update empleados set rut='" +empelados.Rut+ "', nombre='" +empelados.Nombre+ "', apellido='" +empelados.Apellido+ ", Telefono='" + empelados.Telefono + "' where idEmpleado ='" + empelados.IdEmpleado + "'");
+                 String sql = String.Format("update empleados set rut='" +empelados.Rut+ "', nombre='" +empelados.Nombre+ "', apellido='" +empelados.Apellido+ ", Telefono='" + empelados.Telefono + ", idSucursal='"+empelados.IdSucursal+"' where idEmpleado ='" + empelados.IdEmpleado + "'");
                  if (!BD.getInstance().sqlCommand(sql))
                  {
                      return false;

@@ -125,7 +125,7 @@
                 &nbsp;</td>
             <td class="style3">
                 <asp:Button ID="BtActualizar" runat="server" onclick="BtActualizar_Click" 
-                    Text="Actualizar" />
+                    Text="Agregar" />
             </td>
             <td class="style4">
                 &nbsp;</td>
@@ -163,8 +163,9 @@
                     ConflictDetection="CompareAllValues" 
                     DeleteCommand="DELETE FROM [cliente] WHERE [idCliente] = @original_idCliente AND (([nombre] = @original_nombre) OR ([nombre] IS NULL AND @original_nombre IS NULL)) AND (([apellido] = @original_apellido) OR ([apellido] IS NULL AND @original_apellido IS NULL)) AND (([edad] = @original_edad) OR ([edad] IS NULL AND @original_edad IS NULL)) AND (([idVentas] = @original_idVentas) OR ([idVentas] IS NULL AND @original_idVentas IS NULL)) AND (([telefono] = @original_telefono) OR ([telefono] IS NULL AND @original_telefono IS NULL))" 
                     InsertCommand="INSERT INTO [cliente] ([idCliente], [nombre], [apellido], [edad], [idVentas], [telefono]) VALUES (@idCliente, @nombre, @apellido, @edad, @idVentas, @telefono)" 
-                    OldValuesParameterFormatString="original_{0}" 
-                    UpdateCommand="UPDATE [cliente] SET [nombre] = @nombre, [apellido] = @apellido, [edad] = @edad, [idVentas] = @idVentas, [telefono] = @telefono WHERE [idCliente] = @original_idCliente AND (([nombre] = @original_nombre) OR ([nombre] IS NULL AND @original_nombre IS NULL)) AND (([apellido] = @original_apellido) OR ([apellido] IS NULL AND @original_apellido IS NULL)) AND (([edad] = @original_edad) OR ([edad] IS NULL AND @original_edad IS NULL)) AND (([idVentas] = @original_idVentas) OR ([idVentas] IS NULL AND @original_idVentas IS NULL)) AND (([telefono] = @original_telefono) OR ([telefono] IS NULL AND @original_telefono IS NULL))">
+                    OldValuesParameterFormatString="" 
+                    
+                    UpdateCommand="UPDATE [cliente] SET [nombre] = @nombre, [apellido] = @apellido, [edad] = @edad, [idVentas] = @idVentas, [telefono] = @telefono WHERE [idCliente] = @idCliente;">
                     <DeleteParameters>
                         <asp:Parameter Name="original_idCliente" Type="Decimal" />
                         <asp:Parameter Name="original_nombre" Type="String" />
@@ -179,12 +180,7 @@
                         <asp:Parameter Name="edad" Type="Decimal" />
                         <asp:Parameter Name="idVentas" Type="Decimal" />
                         <asp:Parameter Name="telefono" Type="String" />
-                        <asp:Parameter Name="original_idCliente" Type="Decimal" />
-                        <asp:Parameter Name="original_nombre" Type="String" />
-                        <asp:Parameter Name="original_apellido" Type="String" />
-                        <asp:Parameter Name="original_edad" Type="Decimal" />
-                        <asp:Parameter Name="original_idVentas" Type="Decimal" />
-                        <asp:Parameter Name="original_telefono" Type="String" />
+                        <asp:Parameter Name="idCliente" />
                     </UpdateParameters>
                     <InsertParameters>
                         <asp:Parameter Name="idCliente" Type="Decimal" />

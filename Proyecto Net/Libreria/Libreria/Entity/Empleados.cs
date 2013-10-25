@@ -13,6 +13,13 @@ namespace Libreria.Entity
         private String nombre;
         private String apellido;
         private String telefono;
+        private int idSucursal;
+
+        public int IdSucursal
+        {
+            get { return idSucursal; }
+            set { idSucursal = value; }
+        }
 
         public int IdEmpleado
         {
@@ -55,15 +62,17 @@ namespace Libreria.Entity
             Nombre = null;
             Apellido = null;
             Telefono = null;
+            IdSucursal = 0;
         }
 
-        public Empleados(int idEmpleado,String rut, String nombre, String apellido, String telefono)
+        public Empleados(int idEmpleado,String rut, String nombre, String apellido, String telefono, int idSucursal)
         {
             IdEmpleado = idEmpleado;
             Rut = rut;
             Nombre = nombre;
             Apellido = apellido;
             Telefono = telefono;
+            IdSucursal = idSucursal;
         }
 
 
