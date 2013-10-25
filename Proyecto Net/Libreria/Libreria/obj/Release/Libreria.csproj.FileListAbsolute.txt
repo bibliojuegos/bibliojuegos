@@ -28,3 +28,8 @@ C:\Users\fox\git\bibliojuegos\Proyecto Net\Libreria\Libreria\bin\Release\Libreri
 C:\Users\fox\git\bibliojuegos\Proyecto Net\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
 C:\Users\fox\git\bibliojuegos\Proyecto Net\Libreria\Libreria\obj\Release\Libreria.dll
 C:\Users\fox\git\bibliojuegos\Proyecto Net\Libreria\Libreria\obj\Release\Libreria.pdb
+C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\bin\Release\Libreria.dll
+C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\bin\Release\Libreria.pdb
+C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\Libreria.dll
+C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\Libreria.pdb

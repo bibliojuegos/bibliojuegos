@@ -7,7 +7,6 @@ namespace Libreria.Entity
 {
     public class Empleados
     {
-
         private int idEmpleado;
         private string rut;
         private String nombre;

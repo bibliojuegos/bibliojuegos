@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="FrCliente.aspx.cs" Inherits="FrCliente" Title="Página sin título" %>
+﻿<%@ Page EnableEventValidation="false" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="FrCliente.aspx.cs" Inherits="FrCliente" Title="Página sin título" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <style type="text/css">
@@ -140,39 +140,32 @@
                     DataKeyNames="idCliente" DataSourceID="grClienteSource" AllowPaging="True" 
                     AllowSorting="True" BorderStyle="Solid" BorderWidth="2px">
                     <Columns>
-                        <asp:BoundField DataField="idCliente" HeaderText="Id Cliente" ReadOnly="True" 
+                        <asp:BoundField DataField="idCliente" HeaderText="idCliente" ReadOnly="True" 
                             SortExpression="idCliente" />
-                        <asp:BoundField DataField="nombre" HeaderText="Nombre" 
+                        <asp:BoundField DataField="nombre" HeaderText="nombre" 
                             SortExpression="nombre" />
-                        <asp:BoundField DataField="apellido" HeaderText="Apellido" 
+                        <asp:BoundField DataField="apellido" HeaderText="apellido" 
                             SortExpression="apellido" />
-                        <asp:BoundField DataField="edad" HeaderText="Edad" SortExpression="edad" />
-                        <asp:BoundField DataField="idVentas" HeaderText="Id Venta" 
+                        <asp:BoundField DataField="edad" HeaderText="edad" SortExpression="edad" />
+                        <asp:BoundField DataField="idVentas" HeaderText="idVentas" 
                             SortExpression="idVentas" />
-                        <asp:BoundField DataField="telefono" HeaderText="Telefono" 
+                        <asp:BoundField DataField="telefono" HeaderText="telefono" 
                             SortExpression="telefono" />
                         <asp:CommandField ButtonType="Button" ShowEditButton="True" />
                         <asp:CommandField ButtonType="Button" ShowDeleteButton="True" />
                     </Columns>
                 </asp:GridView>
                 <asp:SqlDataSource ID="grClienteSource" runat="server" 
-                    ConnectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=master;Integrated Security=True" 
-                    ProviderName="System.Data.SqlClient" 
+                    ConnectionString="<%$ ConnectionStrings:masterConnectionString %>" 
                     
                     SelectCommand="SELECT [idCliente], [nombre], [apellido], [edad], [idVentas], [telefono] FROM [cliente]" 
-                    ConflictDetection="CompareAllValues" 
-                    DeleteCommand="DELETE FROM [cliente] WHERE [idCliente] = @original_idCliente AND (([nombre] = @original_nombre) OR ([nombre] IS NULL AND @original_nombre IS NULL)) AND (([apellido] = @original_apellido) OR ([apellido] IS NULL AND @original_apellido IS NULL)) AND (([edad] = @original_edad) OR ([edad] IS NULL AND @original_edad IS NULL)) AND (([idVentas] = @original_idVentas) OR ([idVentas] IS NULL AND @original_idVentas IS NULL)) AND (([telefono] = @original_telefono) OR ([telefono] IS NULL AND @original_telefono IS NULL))" 
+                    DeleteCommand="DELETE FROM [cliente] WHERE [idCliente] = @idCliente" 
                     InsertCommand="INSERT INTO [cliente] ([idCliente], [nombre], [apellido], [edad], [idVentas], [telefono]) VALUES (@idCliente, @nombre, @apellido, @edad, @idVentas, @telefono)" 
-                    OldValuesParameterFormatString="" 
                     
-                    UpdateCommand="UPDATE [cliente] SET [nombre] = @nombre, [apellido] = @apellido, [edad] = @edad, [idVentas] = @idVentas, [telefono] = @telefono WHERE [idCliente] = @idCliente;">
+                    
+                    UpdateCommand="UPDATE [cliente] SET [nombre] = @nombre, [apellido] = @apellido, [edad] = @edad, [idVentas] = @idVentas, [telefono] = @telefono WHERE [idCliente] = @idCliente">
                     <DeleteParameters>
-                        <asp:Parameter Name="original_idCliente" Type="Decimal" />
-                        <asp:Parameter Name="original_nombre" Type="String" />
-                        <asp:Parameter Name="original_apellido" Type="String" />
-                        <asp:Parameter Name="original_edad" Type="Decimal" />
-                        <asp:Parameter Name="original_idVentas" Type="Decimal" />
-                        <asp:Parameter Name="original_telefono" Type="String" />
+                        <asp:Parameter Name="idCliente" Type="Decimal" />
                     </DeleteParameters>
                     <UpdateParameters>
                         <asp:Parameter Name="nombre" Type="String" />
@@ -180,7 +173,7 @@
                         <asp:Parameter Name="edad" Type="Decimal" />
                         <asp:Parameter Name="idVentas" Type="Decimal" />
                         <asp:Parameter Name="telefono" Type="String" />
-                        <asp:Parameter Name="idCliente" />
+                        <asp:Parameter Name="idCliente" Type="Decimal" />
                     </UpdateParameters>
                     <InsertParameters>
                         <asp:Parameter Name="idCliente" Type="Decimal" />

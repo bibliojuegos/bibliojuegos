@@ -143,7 +143,8 @@
         </tr>
         <tr>
             <td class="style5">
-                <asp:Button ID="BtSelect" runat="server" Text="Buscar" />
+                <asp:Button ID="btAgregar" runat="server" onclick="btAgregar_Click" 
+                    Text="Agregar" />
             </td>
             <td class="style18">
                 <asp:Button ID="BtSalir" runat="server" Text="Salir" />
@@ -156,7 +157,41 @@
         </tr>
         <tr>
             <td class="style5">
-                &nbsp;</td>
+                <asp:GridView ID="GridView1" runat="server" AllowPaging="True" 
+                    AllowSorting="True" AutoGenerateColumns="False" BorderStyle="Solid" 
+                    BorderWidth="2px" DataKeyNames="idCompania" DataSourceID="SqlDataSource1">
+                    <Columns>
+                        <asp:BoundField DataField="idCompania" HeaderText="idCompania" ReadOnly="True" 
+                            SortExpression="idCompania" />
+                        <asp:BoundField DataField="nombre" HeaderText="nombre" 
+                            SortExpression="nombre" />
+                        <asp:BoundField DataField="idPais" HeaderText="idPais" 
+                            SortExpression="idPais" />
+                        <asp:CommandField ButtonType="Button" ShowDeleteButton="True" 
+                            ShowEditButton="True" />
+                    </Columns>
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+                    ConnectionString="<%$ ConnectionStrings:masterConnectionString %>" 
+                    DeleteCommand="DELETE FROM [compania] WHERE [idCompania] = @idCompania" 
+                    InsertCommand="INSERT INTO [compania] ([idCompania], [nombre], [idPais]) VALUES (@idCompania, @nombre, @idPais)" 
+                    SelectCommand="SELECT [idCompania], [nombre], [idPais] FROM [compania]" 
+                    UpdateCommand="UPDATE [compania] SET [nombre] = @nombre, [idPais] = @idPais WHERE [idCompania] = @idCompania">
+                    <DeleteParameters>
+                        <asp:Parameter Name="idCompania" Type="Decimal" />
+                    </DeleteParameters>
+                    <UpdateParameters>
+                        <asp:Parameter Name="nombre" Type="String" />
+                        <asp:Parameter Name="idPais" Type="Decimal" />
+                        <asp:Parameter Name="idCompania" Type="Decimal" />
+                    </UpdateParameters>
+                    <InsertParameters>
+                        <asp:Parameter Name="idCompania" Type="Decimal" />
+                        <asp:Parameter Name="nombre" Type="String" />
+                        <asp:Parameter Name="idPais" Type="Decimal" />
+                    </InsertParameters>
+                </asp:SqlDataSource>
+            </td>
             <td class="style18">
                 &nbsp;</td>
             <td class="style2">

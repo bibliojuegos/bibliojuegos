@@ -15,7 +15,8 @@ public partial class FrCliente : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        grCliente.DataBind();
+        if(!IsPostBack)
+            grCliente.DataBind();
     }
     protected void BtActualizar_Click(object sender, EventArgs e)
     {
