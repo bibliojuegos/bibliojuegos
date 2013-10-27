@@ -33,3 +33,8 @@ C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\bin\Rel
 C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\Libreria.dll
 C:\Users\Duoc\Desktop\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\Libreria.pdb
+C:\Users\Jazmine\Desktop\Proyecto Net\bibliojuegos-master\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jazmine\Desktop\Proyecto Net\bibliojuegos-master\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\Libreria.dll
+C:\Users\Jazmine\Desktop\Proyecto Net\bibliojuegos-master\bibliojuegos-master\Proyecto Net\Libreria\Libreria\bin\Release\Libreria.dll
+C:\Users\Jazmine\Desktop\Proyecto Net\bibliojuegos-master\bibliojuegos-master\Proyecto Net\Libreria\Libreria\bin\Release\Libreria.pdb
+C:\Users\Jazmine\Desktop\Proyecto Net\bibliojuegos-master\bibliojuegos-master\Proyecto Net\Libreria\Libreria\obj\Release\Libreria.pdb

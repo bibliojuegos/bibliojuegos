@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{47E8E121-DA6C-48AA-904B-76383E33353A}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -49,11 +49,13 @@
     <Compile Include="DAO\DAOCompania.cs" />
     <Compile Include="DAO\DAOEmpleados.cs" />
     <Compile Include="DAO\DAOJuego.cs" />
+    <Compile Include="DAO\DAOVenta.cs" />
     <Compile Include="Entity\Cliente.cs" />
     <Compile Include="Entity\Compania.cs" />
     <Compile Include="Entity\Empleados.cs" />
     <Compile Include="Entity\Juego.cs" />
     <Compile Include="Entity\Pais.cs" />
+    <Compile Include="Entity\Venta.cs" />
     <Compile Include="Generales\BD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
