@@ -1,6 +1,6 @@
 Lo que falta:
 
--Agregar un filtro por nombre
+-Agregar un filtro por nombre (listo)
 
 -Terminar los formularios de las demas clases
 
