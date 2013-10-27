@@ -13,6 +13,7 @@ using System.Xml.Linq;
 
 public partial class FrCliente : System.Web.UI.Page
 {
+    DataTable dt = new DataTable();
     protected void Page_Load(object sender, EventArgs e)
     {
         if(!IsPostBack)

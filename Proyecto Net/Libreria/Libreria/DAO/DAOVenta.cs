@@ -31,11 +31,11 @@ namespace Libreria.DAO
 
         }
 
-        public static double calcular(int cantidad, Juego precio,int total)
-        {
-            //int cantidad = 0;
-            //cantidad* precio = total;
-        }
+        //public static double calcular(int cantidad, Juego precio,int total)
+        //{
+        //    int cantidad = 0;
+        //    cantidad* precio = total;
+        //}
      
     }
 }

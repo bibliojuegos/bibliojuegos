@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Libreria.Entity;
 using Libreria.Generales;
+using System.Data;
 
 namespace Libreria.DAO
 {
@@ -50,6 +51,21 @@ namespace Libreria.DAO
                 return false;
             }
 
+        }
+        public static DataTable sqlLeerTodas(string nombre)
+        {
+            DataTable dt = new DataTable();
+            BD bd = Generales.BD.getInstance();
+            //BD bd = new BD();
+            String stSql = "select * from cliente where 1=1";
+
+            if (nombre.Trim() != "") stSql += String.Format(" and nombre like '%{0}%'", nombre);
+            //if (nombre.Trim() != "") stSql += String.Format("    and nombre like '%{0}%'", nombre);
+            //if (apellidoPaterno.Trim() != "") stSql += String.Format("    and ape_pat like '%{0}%'", apellidoPaterno);
+            //if (direccion.Trim() != "") stSql += String.Format("    and direccion like '%{0}%'", direccion);
+
+            dt = bd.sqlSelect(stSql);
+            return dt;
         }
 
 

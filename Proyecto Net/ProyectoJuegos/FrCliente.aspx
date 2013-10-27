@@ -126,7 +126,11 @@
             <td class="style3">
                 <asp:Button ID="BtActualizar" runat="server" onclick="BtActualizar_Click" 
                     Text="Agregar" />
+                <br />
+                Nombre:<br />
+                <asp:TextBox ID="txNombreF" runat="server"></asp:TextBox>
             </td>
+            <td>&nbsp;</td>
             <td class="style4">
                 &nbsp;</td>
             <td>
@@ -161,12 +165,15 @@
                     SelectCommand="SELECT [idCliente], [nombre], [apellido], [edad], [idVentas], [telefono] FROM [cliente]" 
                     DeleteCommand="DELETE FROM [cliente] WHERE [idCliente] = @idCliente" 
                     InsertCommand="INSERT INTO [cliente] ([idCliente], [nombre], [apellido], [edad], [idVentas], [telefono]) VALUES (@idCliente, @nombre, @apellido, @edad, @idVentas, @telefono)" 
-                    
+                    FilterExpression="nombre like '%{0}%'"
                     
                     UpdateCommand="UPDATE [cliente] SET [nombre] = @nombre, [apellido] = @apellido, [edad] = @edad, [idVentas] = @idVentas, [telefono] = @telefono WHERE [idCliente] = @idCliente">
                     <DeleteParameters>
                         <asp:Parameter Name="idCliente" Type="Decimal" />
                     </DeleteParameters>
+                    <FilterParameters>  
+                        <asp:ControlParameter ControlID="txNombreF" Name="nombre" PropertyName="Text" />
+                    </FilterParameters>
                     <UpdateParameters>
                         <asp:Parameter Name="nombre" Type="String" />
                         <asp:Parameter Name="apellido" Type="String" />
