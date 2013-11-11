@@ -21,7 +21,8 @@ create table cliente
     apellido  varchar (20) ,
     edad      numeric (2) ,
     idVentas  numeric (10),
-    telefono varchar (20)
+    telefono varchar (20),
+    primary key(idCliente)
   ) ;
 
 
@@ -29,7 +30,8 @@ create table compania
   (
     idCompania numeric (3) not null ,
     nombre     varchar (20) ,
-    idPais     numeric (3)
+    idPais     numeric (3),
+    primary key(idCompania)
   ) ;
 
 
@@ -40,21 +42,24 @@ create table empleados
     nombre     varchar (20) ,
     apellido   varchar (20) ,
     telefono   varchar (15) ,
-    idSucursal numeric (3)
+    idSucursal numeric (3),
+    primary key(idEmpleado)
   ) ;
 
 
 create table genero
   (
     idGenero numeric (3) not null ,
-    nombre   varchar (20)
+    nombre   varchar (20),
+    primary key(idGenero)
   ) ;
 
 
 create table pais
   (
     idPais numeric (3) not null ,
-    nombre varchar (20)
+    nombre varchar (20),
+    primary key(idPais)
   ) ;
 
 
@@ -62,7 +67,8 @@ create table plataforma
   (
     idPlataforma numeric (3) not null ,
     nombre       varchar (20) ,
-    lanzamiento  numeric (4)
+    lanzamiento  numeric (4),
+    primary key(idPlataforma)
   ) ;
 
 
@@ -73,7 +79,8 @@ create table ventas
     sucursal    numeric (3) ,
     juego       numeric (3) ,
     idSucursal  numeric (3) ,
-    totalCompra numeric (6)
+    totalCompra numeric (6),
+    primary key(idVentas)
   ) ;
 
 
@@ -82,7 +89,8 @@ create table sucursal
     idSucursal numeric (3) not null ,
     direccion  varchar (30) ,
     telefono   varchar (15) ,
-    email      varchar (25)
+    email      varchar (25),
+    primary key(idSucursal)
   ) ;
 
 
