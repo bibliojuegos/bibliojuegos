@@ -148,11 +148,11 @@ insert into pais(idPais,nombre) values(2,'Estados unidos');
 insert into pais(idPais,nombre) values(3,'Reino unido');
 
 //Datos compania:
-insert into genero(idCompania,nombre,idPais) values(1,'Konami',1);
-insert into genero(idCompania,nombre,idPais) values(2,'Square Enix',1);
-insert into genero(idCompania,nombre,idPais) values(3,'Capcom',1);
-insert into genero(idCompania,nombre,idPais) values(4,'Atlus',1);
-insert into genero(idCompania,nombre,idPais) values(5,'Blizzard',2);
-insert into genero(idCompania,nombre,idPais) values(6,'Rockstar',3);
-insert into genero(idCompania,nombre,idPais) values(7,'Activision',2);
-insert into genero(idCompania,nombre,idPais) values(8,'Namco Bandai',1);
+insert into compania(idCompania,nombre,idPais) values(1,'Konami',1);
+insert into compania(idCompania,nombre,idPais) values(2,'Square Enix',1);
+insert into compania(idCompania,nombre,idPais) values(3,'Capcom',1);
+insert into compania(idCompania,nombre,idPais) values(4,'Atlus',1);
+insert into compania(idCompania,nombre,idPais) values(5,'Blizzard',2);
+insert into compania(idCompania,nombre,idPais) values(6,'Rockstar',3);
+insert into compania(idCompania,nombre,idPais) values(7,'Activision',2);
+insert into compania(idCompania,nombre,idPais) values(8,'Namco Bandai',1);
