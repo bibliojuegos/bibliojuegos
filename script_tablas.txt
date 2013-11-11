@@ -173,9 +173,9 @@ insert into plataforma(idPlataforma,nombre,lanzamiento) values(4,'3DS',2011);
 insert into plataforma(idPlataforma,nombre,lanzamiento) values(5,'PC',1982);
 
 //Datos juegos:
-insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(1,'GTA V',1,'Espanol',2013,'Mature',5,4,20,30000);
-insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(2,'Pokemon X',4,'Espanol',2013,'Everyone',9,1,50,23000);
-insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(3,'Pokemon Y',4,'Espanol',2013,'Everyone',9,1,50,23000);
-insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(4,'Battlefield 4',2,'Espanol',2013,'Mature',13,2,50,30000);
-insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(5,'Dragon''s Crown',3,'Ingles',2013,'Teen',4,1,25,24000);
-insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(6,'Starcraft II: HotS',5,'Espanol',2013,'Teen',6,7,10,15000);
+insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(1,'GTA V',1,'Espanol',2013,'Mayores (18+)',5,4,20,30000);
+insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(2,'Pokemon X',4,'Espanol',2013,'Todos',9,1,50,23000);
+insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(3,'Pokemon Y',4,'Espanol',2013,'Todos',9,1,50,23000);
+insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(4,'Battlefield 4',2,'Espanol',2013,'Mayores (18+)',13,2,50,30000);
+insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(5,'Dragon''s Crown',3,'Ingles',2013,'Adolescentes (13+)',4,1,25,24000);
+insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(6,'Starcraft II: HotS',5,'Espanol',2013,'Adolescentes (13+)',6,7,10,15000);
