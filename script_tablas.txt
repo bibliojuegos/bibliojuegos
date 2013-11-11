@@ -156,3 +156,10 @@ insert into compania(idCompania,nombre,idPais) values(5,'Blizzard',2);
 insert into compania(idCompania,nombre,idPais) values(6,'Rockstar',3);
 insert into compania(idCompania,nombre,idPais) values(7,'Activision',2);
 insert into compania(idCompania,nombre,idPais) values(8,'Namco Bandai',1);
+
+//Datos plataforma:
+insert into plataforma(idPlataforma,nombre,lanzamiento) values(1,'PS3',2006);
+insert into plataforma(idPlataforma,nombre,lanzamiento) values(2,'XBOX360',2005);
+insert into plataforma(idPlataforma,nombre,lanzamiento) values(3,'PSVITA',2006);
+insert into plataforma(idPlataforma,nombre,lanzamiento) values(4,'3DS',2006);
+insert into plataforma(idPlataforma,nombre,lanzamiento) values(5,'PC',1982);
