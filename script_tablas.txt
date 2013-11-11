@@ -145,21 +145,29 @@ insert into genero(idGenero,nombre) values(6,'Otome');
 //Datos pais:
 insert into pais(idPais,nombre) values(1,'Japon');
 insert into pais(idPais,nombre) values(2,'Estados unidos');
-insert into pais(idPais,nombre) values(3,'Reino unido');
+insert into pais(idPais,nombre) values(3,'Francia');
 
 //Datos compania:
 insert into compania(idCompania,nombre,idPais) values(1,'Konami',1);
 insert into compania(idCompania,nombre,idPais) values(2,'Square Enix',1);
 insert into compania(idCompania,nombre,idPais) values(3,'Capcom',1);
 insert into compania(idCompania,nombre,idPais) values(4,'Atlus',1);
-insert into compania(idCompania,nombre,idPais) values(5,'Blizzard',2);
-insert into compania(idCompania,nombre,idPais) values(6,'Rockstar',3);
-insert into compania(idCompania,nombre,idPais) values(7,'Activision',2);
-insert into compania(idCompania,nombre,idPais) values(8,'Namco Bandai',1);
+insert into compania(idCompania,nombre,idPais) values(5,'Rockstar',2);
+insert into compania(idCompania,nombre,idPais) values(6,'Activision',2);
+insert into compania(idCompania,nombre,idPais) values(7,'Namco Bandai',1);
+insert into compania(idCompania,nombre,idPais) values(8,'Sega',1);
+insert into compania(idCompania,nombre,idPais) values(9,'Nintendo',1);
+insert into compania(idCompania,nombre,idPais) values(10,'Sony',1);
+insert into compania(idCompania,nombre,idPais) values(11,'Ubisoft',3);
+insert into compania(idCompania,nombre,idPais) values(12,'Atari',2);
+insert into compania(idCompania,nombre,idPais) values(13,'EA',2);
+insert into compania(idCompania,nombre,idPais) values(14,'Valve',2);
+insert into compania(idCompania,nombre,idPais) values(15,'Bethesda',2);
+
 
 //Datos plataforma:
 insert into plataforma(idPlataforma,nombre,lanzamiento) values(1,'PS3',2006);
 insert into plataforma(idPlataforma,nombre,lanzamiento) values(2,'XBOX360',2005);
-insert into plataforma(idPlataforma,nombre,lanzamiento) values(3,'PSVITA',2006);
-insert into plataforma(idPlataforma,nombre,lanzamiento) values(4,'3DS',2006);
+insert into plataforma(idPlataforma,nombre,lanzamiento) values(3,'PSVITA',2012);
+insert into plataforma(idPlataforma,nombre,lanzamiento) values(4,'3DS',2011);
 insert into plataforma(idPlataforma,nombre,lanzamiento) values(5,'PC',1982);
