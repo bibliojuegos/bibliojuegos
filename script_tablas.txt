@@ -133,3 +133,26 @@ alter table sucursal add constarint cliente_pk primary key
   idSucursal
 )
 ;
+
+//Datos genero:
+insert into genero(idGenero,nombre) values(1,'RPG');
+insert into genero(idGenero,nombre) values(2,'Shooter');
+insert into genero(idGenero,nombre) values(3,'Deportes');
+insert into genero(idGenero,nombre) values(4,'Accion');
+insert into genero(idGenero,nombre) values(5,'Aventura');
+insert into genero(idGenero,nombre) values(6,'Otome');
+
+//Datos pais:
+insert into pais(idPais,nombre) values(1,'Japon');
+insert into pais(idPais,nombre) values(2,'Estados unidos');
+insert into pais(idPais,nombre) values(3,'Reino unido');
+
+//Datos compania:
+insert into genero(idCompania,nombre,idPais) values(1,'Konami',1);
+insert into genero(idCompania,nombre,idPais) values(2,'Square Enix',1);
+insert into genero(idCompania,nombre,idPais) values(3,'Capcom',1);
+insert into genero(idCompania,nombre,idPais) values(4,'Atlus',1);
+insert into genero(idCompania,nombre,idPais) values(5,'Blizzard',2);
+insert into genero(idCompania,nombre,idPais) values(6,'Rockstar',3);
+insert into genero(idCompania,nombre,idPais) values(7,'Activision',2);
+insert into genero(idCompania,nombre,idPais) values(8,'Namco Bandai',1);
