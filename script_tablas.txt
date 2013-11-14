@@ -78,7 +78,6 @@ create table ventas
     idCliente   numeric (3) ,
     idSucursal  numeric (3) ,
     idJuego     numeric (3) ,
-    idSucursal  numeric (3) ,
     totalCompra numeric (6),
     fechaCompra varchar(10),
     primary key(idVentas)
