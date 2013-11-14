@@ -75,9 +75,9 @@ create table plataforma
 create table ventas
   (
     idVentas    numeric (10) not null ,
-    cliente     numeric (3) ,
-    sucursal    numeric (3) ,
-    juego       numeric (3) ,
+    idCliente   numeric (3) ,
+    idSucursal  numeric (3) ,
+    idJuego     numeric (3) ,
     idSucursal  numeric (3) ,
     totalCompra numeric (6),
     fechaCompra varchar(10),
