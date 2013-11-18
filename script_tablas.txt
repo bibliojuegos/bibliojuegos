@@ -94,54 +94,6 @@ create table sucursal
   ) ;
 
 
-alter table cliente add constarint cliente_pk primary key
-(
-  idCliente
-)
-;
-
-alter table compania add constarint cliente_pk primary key
-(
-  idCompania
-)
-;
-
-alter table genero add constarint cliente_pk primary key
-(
-  idGenero
-)
-;
-
-alter table juegos add constarint cliente_pk primary key
-(
-  idJuego
-)
-;
-
-alter table pais add constarint cliente_pk primary key
-(
-  idPais
-)
-;
-
-alter table plataforma add constarint cliente_pk primary key
-(
-  idPlataforma
-)
-;
-
-alter table ventas add constarint cliente_pk primary key
-(
-  idVentas
-)
-;
-
-alter table sucursal add constarint cliente_pk primary key
-(
-  idSucursal
-)
-;
-
 //Datos genero:
 insert into genero(idGenero,nombre) values(1,'RPG');
 insert into genero(idGenero,nombre) values(2,'Shooter');
@@ -149,6 +101,7 @@ insert into genero(idGenero,nombre) values(3,'Deportes');
 insert into genero(idGenero,nombre) values(4,'Accion');
 insert into genero(idGenero,nombre) values(5,'Aventura');
 insert into genero(idGenero,nombre) values(6,'Otome');
+insert into genero(idGenero,nombre) values(7'RTS');
 
 //Datos pais:
 insert into pais(idPais,nombre) values(1,'Japon');
