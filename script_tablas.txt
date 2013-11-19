@@ -101,7 +101,7 @@ insert into genero(idGenero,nombre) values(3,'Deportes');
 insert into genero(idGenero,nombre) values(4,'Accion');
 insert into genero(idGenero,nombre) values(5,'Aventura');
 insert into genero(idGenero,nombre) values(6,'Otome');
-insert into genero(idGenero,nombre) values(7'RTS');
+insert into genero(idGenero,nombre) values(7,'RTS');
 
 //Datos pais:
 insert into pais(idPais,nombre) values(1,'Japon');
