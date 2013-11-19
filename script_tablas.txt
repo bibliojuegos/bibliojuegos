@@ -128,6 +128,7 @@ insert into compania(idCompania,nombre,idPais) values(15,'Bethesda',2);
 
 
 //Datos plataforma:
+insert into plataforma(idPlataforma,nombre,lanzamiento) values(0,'Todos',0000);
 insert into plataforma(idPlataforma,nombre,lanzamiento) values(1,'PS3',2006);
 insert into plataforma(idPlataforma,nombre,lanzamiento) values(2,'XBOX360',2005);
 insert into plataforma(idPlataforma,nombre,lanzamiento) values(3,'PSVITA',2012);
