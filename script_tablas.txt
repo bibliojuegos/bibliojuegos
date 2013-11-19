@@ -97,11 +97,12 @@ create table sucursal
 //Datos genero:
 insert into genero(idGenero,nombre) values(1,'RPG');
 insert into genero(idGenero,nombre) values(2,'Shooter');
-insert into genero(idGenero,nombre) values(3,'Deportes');
+insert into genero(idGenero,nombre) values(3,'Peleas');
 insert into genero(idGenero,nombre) values(4,'Accion');
 insert into genero(idGenero,nombre) values(5,'Aventura');
-insert into genero(idGenero,nombre) values(6,'Otome');
+insert into genero(idGenero,nombre) values(6,'Deportes');
 insert into genero(idGenero,nombre) values(7,'RTS');
+insert into genero(idGenero,nombre) values(8,'Otome');
 
 //Datos pais:
 insert into pais(idPais,nombre) values(1,'Japon');
@@ -140,3 +141,4 @@ insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania
 insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(4,'Battlefield 4',2,'Espanol',2013,'Mayores (18+)',13,2,50,30000);
 insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(5,'Dragon''s Crown',3,'Ingles',2013,'Adolescentes (13+)',4,1,25,24000);
 insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(6,'Starcraft II: HotS',5,'Espanol',2013,'Adolescentes (13+)',6,7,10,15000);
+insert into juegos(idJuego,nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values(7,'Street Fighter IV AE',1,'Espanol',2011,'Adolescentes (13+)',3,3,10,15000);
