@@ -2,12 +2,10 @@ Lo que falta:
 
 -Agregar un filtro por nombre (listo)
 
--Terminar los formularios de las demas clases
+-Terminar los formularios de las demas clases (listo?)
 
--Agregar un menu
+-Agregar un menu (listo?)
 
--Enlazar las tablas
+-Enlazar las tablas (listo)
 
--Colocar los combobox
-
-Agregar lo que crees conveniente.
+-Colocar los combobox (listo)
