@@ -3,12 +3,12 @@
 create table juegos(
 idJuego int identity(1,1),
 nombre varchar(30),
-idPlataforma numeric(3),
+idPlataforma int,
 idioma varchar(20),
 ano numeric(4),
 restriccion varchar(20),
-idCompania numeric(3),
-idGenero numeric(3),
+idCompania int,
+idGenero int,
 stock numeric(4),
 precio numeric(6),
 primary key(idJuego)
