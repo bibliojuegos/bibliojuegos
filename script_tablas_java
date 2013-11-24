@@ -1,0 +1,141 @@
+create table juegos(
+idJuego int auto_increment,
+nombre varchar(30),
+idPlataforma int,
+idioma varchar(20),
+ano numeric(4),
+restriccion varchar(20),
+idCompania int,
+idGenero int,
+stock numeric(4),
+precio numeric(6),
+primary key(idJuego)
+);
+
+create table cliente
+  (
+    idCliente int auto_increment not null ,
+    nombre    varchar (20) ,
+    apellido  varchar (20) ,
+    telefono varchar (20),
+    usuario varchar(20),
+    clave varchar(20),
+    esAdmin char(1),
+    primary key(idCliente)
+  ) ;
+
+
+create table compania
+  (
+    idCompania int auto_increment not null ,
+    nombre     varchar (20) ,
+    idPais     int,
+    primary key(idCompania)
+  ) ;
+
+
+create table empleados
+  (
+    idEmpleado int auto_increment not null ,
+    rut        varchar (15) ,
+    nombre     varchar (20) ,
+    apellido   varchar (20) ,
+    telefono   varchar (15) ,
+    idSucursal int,
+    primary key(idEmpleado)
+  ) ;
+
+
+create table genero
+  (
+    idGenero int auto_increment not null ,
+    nombre   varchar (20),
+    primary key(idGenero)
+  ) ;
+
+
+create table pais
+  (
+    idPais int auto_increment not null ,
+    nombre varchar (20),
+    primary key(idPais)
+  ) ;
+
+
+create table plataforma
+  (
+    idPlataforma int auto_increment not null ,
+    nombre       varchar (20) ,
+    lanzamiento  numeric (4),
+    primary key(idPlataforma)
+  ) ;
+
+
+create table ventas
+  (
+    idVenta    int auto_increment not null ,
+    idCliente   int,
+    idEmpleado  int,
+    idSucursal  int,
+    idJuego     int,
+    totalCompra numeric (8),
+    fechaCompra datetime,
+    primary key(idVenta)
+  ) ;
+
+
+create table sucursal
+  (
+    idSucursal int auto_increment not null ,
+    direccion  varchar (30) ,
+    telefono   varchar (15) ,
+    email      varchar (25),
+    primary key(idSucursal)
+  ) ;
+
+
+insert into cliente(nombre,apellido,telefono,usuario,clave,esAdmin) values('Administrador','Administrador',0,'admin',123,'y');
+
+insert into genero(nombre) values('RPG');
+insert into genero(nombre) values('Shooter');
+insert into genero(nombre) values('Peleas');
+insert into genero(nombre) values('Accion');
+insert into genero(nombre) values('Aventura');
+insert into genero(nombre) values('Deportes');
+insert into genero(nombre) values('RTS');
+insert into genero(nombre) values('Otome');
+
+insert into pais(nombre) values('Japon');
+insert into pais(nombre) values('Estados unidos');
+insert into pais(nombre) values('Francia');
+
+insert into compania(nombre,idPais) values('Konami',1);
+insert into compania(nombre,idPais) values('Square Enix',1);
+insert into compania(nombre,idPais) values('Capcom',1);
+insert into compania(nombre,idPais) values('Atlus',1);
+insert into compania(nombre,idPais) values('Rockstar',2);
+insert into compania(nombre,idPais) values('Activision',2);
+insert into compania(nombre,idPais) values('Namco Bandai',1);
+insert into compania(nombre,idPais) values('Sega',1);
+insert into compania(nombre,idPais) values('Nintendo',1);
+insert into compania(nombre,idPais) values('Sony',1);
+insert into compania(nombre,idPais) values('Ubisoft',3);
+insert into compania(nombre,idPais) values('Atari',2);
+insert into compania(nombre,idPais) values('EA',2);
+insert into compania(nombre,idPais) values('Valve',2);
+insert into compania(nombre,idPais) values('Bethesda',2);
+
+insert into plataforma(nombre,lanzamiento) values('Todas',0000);
+insert into plataforma(nombre,lanzamiento) values('PS3',2006);
+insert into plataforma(nombre,lanzamiento) values('XBOX360',2005);
+insert into plataforma(nombre,lanzamiento) values('PSVITA',2012);
+insert into plataforma(nombre,lanzamiento) values('3DS',2011);
+insert into plataforma(nombre,lanzamiento) values('PC',1982);
+
+insert into juegos(nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values('GTA V',1,'Espanol',2013,'Mayores (18+)',5,4,20,30000);
+insert into juegos(nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values('Pokemon X',4,'Espanol',2013,'Todos',9,1,50,23000);
+insert into juegos(nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values('Pokemon Y',4,'Espanol',2013,'Todos',9,1,50,23000);
+insert into juegos(nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values('Battlefield 4',2,'Espanol',2013,'Mayores (18+)',13,2,50,30000);
+insert into juegos(nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values('Dragon''s Crown',3,'Ingles',2013,'Adolescentes (13+)',4,1,25,24000);
+insert into juegos(nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values('Starcraft II: HotS',5,'Espanol',2013,'Adolescentes (13+)',6,7,10,15000);
+insert into juegos(nombre,idPlataforma,idioma,ano,restriccion,idCompania,idGenero,stock,precio) values('Street Fighter IV AE',1,'Espanol',2011,'Adolescentes (13+)',3,3,10,15000);
