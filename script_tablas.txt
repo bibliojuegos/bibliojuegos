@@ -31,7 +31,7 @@ create table compania
   (
     idCompania int identity (1,1) not null ,
     nombre     varchar (20) ,
-    idPais     numeric (3),
+    idPais     int,
     primary key(idCompania)
   ) ;
 
@@ -43,7 +43,7 @@ create table empleados
     nombre     varchar (20) ,
     apellido   varchar (20) ,
     telefono   varchar (15) ,
-    idSucursal numeric (3),
+    idSucursal int,
     primary key(idEmpleado)
   ) ;
 
@@ -76,10 +76,10 @@ create table plataforma
 create table ventas
   (
     idVenta    int identity(1,1) not null ,
-    idCliente   numeric (3) ,
-    idEmpleado  numeric (3),
-    idSucursal  numeric (3) ,
-    idJuego     numeric (3) ,
+    idCliente   int,
+    idEmpleado  int,
+    idSucursal  int,
+    idJuego     int,
     totalCompra numeric (8),
     fechaCompra datetime,
     primary key(idVenta)
