@@ -96,6 +96,8 @@ create table sucursal
   ) ;
 
 
+insert into cliente(nombre,apellido,telefono,usuario,clave,esAdmin) values('Administrador','Administrador',0,'admin',123,'y');
+
 insert into genero(nombre) values('RPG');
 insert into genero(nombre) values('Shooter');
 insert into genero(nombre) values('Peleas');
