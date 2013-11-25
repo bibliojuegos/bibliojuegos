@@ -73,12 +73,12 @@ create table plataforma
 
 create table ventas
   (
-    idVenta    int auto_increment not null ,
-    idCliente   int,
-    idEmpleado  int,
-    idSucursal  int,
-    idJuego     int,
-    totalCompra numeric (8),
+    idVenta int auto_increment not null ,
+    idJuego int,
+    usuario varchar(20),
+    precio numeric(7),
+    cantidad numeric(3),
+    totalCompra numeric(8),
     fechaCompra datetime,
     primary key(idVenta)
   ) ;
@@ -92,9 +92,17 @@ create table sucursal
     email      varchar (25),
     primary key(idSucursal)
   ) ;
+  
+create table login
+(
+  usuario varchar(20),
+  contrasena varchar(20),
+  esadmin varchar(1),
+  primary key(usuario)
+);
 
 
-insert into cliente(nombre,apellido,telefono,usuario,clave,esAdmin) values('Administrador','Administrador',0,'admin',123,'y');
+insert into login(usuario,contrasena,esadmin) values('admin','123','y');
 
 insert into genero(nombre) values('RPG');
 insert into genero(nombre) values('Shooter');
